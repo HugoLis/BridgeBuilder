@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A87575F27F282BB003D608A /* BridgeBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87575E27F282BB003D608A /* BridgeBuilderApp.swift */; };
+		9A87576127F282BB003D608A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87576027F282BB003D608A /* ContentView.swift */; };
+		9A87576327F282BD003D608A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A87576227F282BD003D608A /* Assets.xcassets */; };
+		9A87576627F282BD003D608A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A87576527F282BD003D608A /* Preview Assets.xcassets */; };
+		9A87576E27F28300003D608A /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9A87576D27F28300003D608A /* PythonKit */; };
+		9A87577127F28353003D608A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87577027F28353003D608A /* AppDelegate.swift */; };
+		9A87577527F2867A003D608A /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87577227F28679003D608A /* Simulation.swift */; };
+		9A87577627F2867A003D608A /* NusaPlus.py in Resources */ = {isa = PBXBuildFile; fileRef = 9A87577327F28679003D608A /* NusaPlus.py */; };
+		9A87577727F2867A003D608A /* EvolutionChamber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87577427F28679003D608A /* EvolutionChamber.swift */; };
+		9A8757A227F286C7003D608A /* Evolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578527F286C7003D608A /* Evolvable.swift */; };
+		9A8757A327F286C7003D608A /* Gene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578627F286C7003D608A /* Gene.swift */; };
+		9A8757A427F286C7003D608A /* Gene+Crossover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578727F286C7003D608A /* Gene+Crossover.swift */; };
+		9A8757A527F286C7003D608A /* Gene+Mutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578827F286C7003D608A /* Gene+Mutation.swift */; };
+		9A8757A627F286C7003D608A /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578A27F286C7003D608A /* Bridge.swift */; };
+		9A8757A727F286C7003D608A /* MinStressBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578B27F286C7003D608A /* MinStressBridge.swift */; };
+		9A8757A827F286C7003D608A /* MaxLoadBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578C27F286C7003D608A /* MaxLoadBridge.swift */; };
+		9A8757A927F286C7003D608A /* MinMaterialBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578D27F286C7003D608A /* MinMaterialBridge.swift */; };
+		9A8757AA27F286C7003D608A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87578F27F286C7003D608A /* Edge.swift */; };
+		9A8757AB27F286C7003D608A /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579027F286C7003D608A /* Graph.swift */; };
+		9A8757AC27F286C7003D608A /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579127F286C7003D608A /* Vertex.swift */; };
+		9A8757AD27F286C7003D608A /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579327F286C7003D608A /* Random.swift */; };
+		9A8757AE27F286C7003D608A /* TestGene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579427F286C7003D608A /* TestGene.swift */; };
+		9A8757AF27F286C7003D608A /* Array+Deviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579527F286C7003D608A /* Array+Deviation.swift */; };
+		9A8757B027F286C7003D608A /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579627F286C7003D608A /* VectorMath.swift */; };
+		9A8757B127F286C7003D608A /* CGFloat+Python.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579727F286C7003D608A /* CGFloat+Python.swift */; };
+		9A8757B227F286C7003D608A /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87579827F286C7003D608A /* PolarPoint.swift */; };
+		9A8757B827F286C7003D608A /* MaxHeightTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8757A027F286C7003D608A /* MaxHeightTower.swift */; };
+		9A8757B927F286C7003D608A /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8757A127F286C7003D608A /* Tower.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A87575B27F282BB003D608A /* BridgeBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A87575E27F282BB003D608A /* BridgeBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeBuilderApp.swift; sourceTree = "<group>"; };
+		9A87576027F282BB003D608A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A87576227F282BD003D608A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A87576527F282BD003D608A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A87576F27F28310003D608A /* BridgeBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BridgeBuilder.entitlements; sourceTree = "<group>"; };
+		9A87577027F28353003D608A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A87577227F28679003D608A /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		9A87577327F28679003D608A /* NusaPlus.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = NusaPlus.py; sourceTree = "<group>"; };
+		9A87577427F28679003D608A /* EvolutionChamber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvolutionChamber.swift; sourceTree = "<group>"; };
+		9A87578527F286C7003D608A /* Evolvable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evolvable.swift; sourceTree = "<group>"; };
+		9A87578627F286C7003D608A /* Gene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gene.swift; sourceTree = "<group>"; };
+		9A87578727F286C7003D608A /* Gene+Crossover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gene+Crossover.swift"; sourceTree = "<group>"; };
+		9A87578827F286C7003D608A /* Gene+Mutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gene+Mutation.swift"; sourceTree = "<group>"; };
+		9A87578A27F286C7003D608A /* Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		9A87578B27F286C7003D608A /* MinStressBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinStressBridge.swift; sourceTree = "<group>"; };
+		9A87578C27F286C7003D608A /* MaxLoadBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLoadBridge.swift; sourceTree = "<group>"; };
+		9A87578D27F286C7003D608A /* MinMaterialBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaterialBridge.swift; sourceTree = "<group>"; };
+		9A87578F27F286C7003D608A /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		9A87579027F286C7003D608A /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		9A87579127F286C7003D608A /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		9A87579327F286C7003D608A /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		9A87579427F286C7003D608A /* TestGene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGene.swift; sourceTree = "<group>"; };
+		9A87579527F286C7003D608A /* Array+Deviation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Deviation.swift"; sourceTree = "<group>"; };
+		9A87579627F286C7003D608A /* VectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
+		9A87579727F286C7003D608A /* CGFloat+Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Python.swift"; sourceTree = "<group>"; };
+		9A87579827F286C7003D608A /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
+		9A87579A27F286C7003D608A /* NusaPlusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NusaPlusTest.swift; sourceTree = "<group>"; };
+		9A87579B27F286C7003D608A /* TrussTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrussTest.swift; sourceTree = "<group>"; };
+		9A87579C27F286C7003D608A /* plate-test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "plate-test.py"; sourceTree = "<group>"; };
+		9A87579D27F286C7003D608A /* PlateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateTest.swift; sourceTree = "<group>"; };
+		9A87579E27F286C7003D608A /* truss-test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "truss-test.py"; sourceTree = "<group>"; };
+		9A8757A027F286C7003D608A /* MaxHeightTower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeightTower.swift; sourceTree = "<group>"; };
+		9A8757A127F286C7003D608A /* Tower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A87575827F282BB003D608A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A87576E27F28300003D608A /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A87575227F282BB003D608A = {
+			isa = PBXGroup;
+			children = (
+				9A87575D27F282BB003D608A /* BridgeBuilder */,
+				9A87575C27F282BB003D608A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A87575C27F282BB003D608A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A87575B27F282BB003D608A /* BridgeBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A87575D27F282BB003D608A /* BridgeBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				9A87576F27F28310003D608A /* BridgeBuilder.entitlements */,
+				9A87575E27F282BB003D608A /* BridgeBuilderApp.swift */,
+				9A87577027F28353003D608A /* AppDelegate.swift */,
+				9A87576027F282BB003D608A /* ContentView.swift */,
+				9A87577427F28679003D608A /* EvolutionChamber.swift */,
+				9A87577227F28679003D608A /* Simulation.swift */,
+				9A87577327F28679003D608A /* NusaPlus.py */,
+				9A87579227F286C7003D608A /* Auxiliary */,
+				9A87578927F286C7003D608A /* Bridges */,
+				9A87578427F286C7003D608A /* Gene */,
+				9A87578E27F286C7003D608A /* Graph */,
+				9A87579927F286C7003D608A /* SampleCode */,
+				9A87579F27F286C7003D608A /* Towers */,
+				9A87576227F282BD003D608A /* Assets.xcassets */,
+				9A87576427F282BD003D608A /* Preview Content */,
+			);
+			path = BridgeBuilder;
+			sourceTree = "<group>";
+		};
+		9A87576427F282BD003D608A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A87576527F282BD003D608A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A87578427F286C7003D608A /* Gene */ = {
+			isa = PBXGroup;
+			children = (
+				9A87578527F286C7003D608A /* Evolvable.swift */,
+				9A87578627F286C7003D608A /* Gene.swift */,
+				9A87578727F286C7003D608A /* Gene+Crossover.swift */,
+				9A87578827F286C7003D608A /* Gene+Mutation.swift */,
+			);
+			path = Gene;
+			sourceTree = "<group>";
+		};
+		9A87578927F286C7003D608A /* Bridges */ = {
+			isa = PBXGroup;
+			children = (
+				9A87578A27F286C7003D608A /* Bridge.swift */,
+				9A87578B27F286C7003D608A /* MinStressBridge.swift */,
+				9A87578C27F286C7003D608A /* MaxLoadBridge.swift */,
+				9A87578D27F286C7003D608A /* MinMaterialBridge.swift */,
+			);
+			path = Bridges;
+			sourceTree = "<group>";
+		};
+		9A87578E27F286C7003D608A /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				9A87578F27F286C7003D608A /* Edge.swift */,
+				9A87579027F286C7003D608A /* Graph.swift */,
+				9A87579127F286C7003D608A /* Vertex.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		9A87579227F286C7003D608A /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				9A87579327F286C7003D608A /* Random.swift */,
+				9A87579427F286C7003D608A /* TestGene.swift */,
+				9A87579527F286C7003D608A /* Array+Deviation.swift */,
+				9A87579627F286C7003D608A /* VectorMath.swift */,
+				9A87579727F286C7003D608A /* CGFloat+Python.swift */,
+				9A87579827F286C7003D608A /* PolarPoint.swift */,
+			);
+			path = Auxiliary;
+			sourceTree = "<group>";
+		};
+		9A87579927F286C7003D608A /* SampleCode */ = {
+			isa = PBXGroup;
+			children = (
+				9A87579A27F286C7003D608A /* NusaPlusTest.swift */,
+				9A87579B27F286C7003D608A /* TrussTest.swift */,
+				9A87579C27F286C7003D608A /* plate-test.py */,
+				9A87579D27F286C7003D608A /* PlateTest.swift */,
+				9A87579E27F286C7003D608A /* truss-test.py */,
+			);
+			path = SampleCode;
+			sourceTree = "<group>";
+		};
+		9A87579F27F286C7003D608A /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				9A8757A027F286C7003D608A /* MaxHeightTower.swift */,
+				9A8757A127F286C7003D608A /* Tower.swift */,
+			);
+			path = Towers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A87575A27F282BB003D608A /* BridgeBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A87576927F282BD003D608A /* Build configuration list for PBXNativeTarget "BridgeBuilder" */;
+			buildPhases = (
+				9A87575727F282BB003D608A /* Sources */,
+				9A87575827F282BB003D608A /* Frameworks */,
+				9A87575927F282BB003D608A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgeBuilder;
+			packageProductDependencies = (
+				9A87576D27F28300003D608A /* PythonKit */,
+			);
+			productName = BridgeBuilder;
+			productReference = 9A87575B27F282BB003D608A /* BridgeBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A87575327F282BB003D608A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9A87575A27F282BB003D608A = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 9A87575627F282BB003D608A /* Build configuration list for PBXProject "BridgeBuilder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A87575227F282BB003D608A;
+			packageReferences = (
+				9A87576C27F28300003D608A /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = 9A87575C27F282BB003D608A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A87575A27F282BB003D608A /* BridgeBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A87575927F282BB003D608A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A87576627F282BD003D608A /* Preview Assets.xcassets in Resources */,
+				9A87577627F2867A003D608A /* NusaPlus.py in Resources */,
+				9A87576327F282BD003D608A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A87575727F282BB003D608A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A8757B927F286C7003D608A /* Tower.swift in Sources */,
+				9A8757A627F286C7003D608A /* Bridge.swift in Sources */,
+				9A87577527F2867A003D608A /* Simulation.swift in Sources */,
+				9A8757AA27F286C7003D608A /* Edge.swift in Sources */,
+				9A8757B227F286C7003D608A /* PolarPoint.swift in Sources */,
+				9A8757AD27F286C7003D608A /* Random.swift in Sources */,
+				9A8757B827F286C7003D608A /* MaxHeightTower.swift in Sources */,
+				9A8757AE27F286C7003D608A /* TestGene.swift in Sources */,
+				9A8757AF27F286C7003D608A /* Array+Deviation.swift in Sources */,
+				9A8757A927F286C7003D608A /* MinMaterialBridge.swift in Sources */,
+				9A87577727F2867A003D608A /* EvolutionChamber.swift in Sources */,
+				9A8757B027F286C7003D608A /* VectorMath.swift in Sources */,
+				9A8757AC27F286C7003D608A /* Vertex.swift in Sources */,
+				9A87577127F28353003D608A /* AppDelegate.swift in Sources */,
+				9A8757A527F286C7003D608A /* Gene+Mutation.swift in Sources */,
+				9A8757A827F286C7003D608A /* MaxLoadBridge.swift in Sources */,
+				9A8757A727F286C7003D608A /* MinStressBridge.swift in Sources */,
+				9A8757B127F286C7003D608A /* CGFloat+Python.swift in Sources */,
+				9A8757AB27F286C7003D608A /* Graph.swift in Sources */,
+				9A8757A327F286C7003D608A /* Gene.swift in Sources */,
+				9A87576127F282BB003D608A /* ContentView.swift in Sources */,
+				9A8757A227F286C7003D608A /* Evolvable.swift in Sources */,
+				9A87575F27F282BB003D608A /* BridgeBuilderApp.swift in Sources */,
+				9A8757A427F286C7003D608A /* Gene+Crossover.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A87576727F282BD003D608A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A87576827F282BD003D608A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A87576A27F282BD003D608A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BridgeBuilder/BridgeBuilder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BridgeBuilder/Preview Content\"";
+				DEVELOPMENT_TEAM = AD2MZY3MHY;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlispector.BridgeBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "2,6";
+			};
+			name = Debug;
+		};
+		9A87576B27F282BD003D608A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BridgeBuilder/BridgeBuilder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BridgeBuilder/Preview Content\"";
+				DEVELOPMENT_TEAM = AD2MZY3MHY;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlispector.BridgeBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "2,6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A87575627F282BB003D608A /* Build configuration list for PBXProject "BridgeBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A87576727F282BD003D608A /* Debug */,
+				9A87576827F282BD003D608A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A87576927F282BD003D608A /* Build configuration list for PBXNativeTarget "BridgeBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A87576A27F282BD003D608A /* Debug */,
+				9A87576B27F282BD003D608A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A87576C27F28300003D608A /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A87576D27F28300003D608A /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A87576C27F28300003D608A /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9A87575327F282BB003D608A /* Project object */;
+}
