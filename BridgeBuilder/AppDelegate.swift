@@ -8,13 +8,15 @@
 import UIKit
 import PythonKit
 
-// Import Python Packages
+// Imports Python Packages.
 let Sys = Python.import("sys")
 let Warnings = Python.import("warnings")
 let Nusa = Python.import("nusa")
 let Matplotlib = Python.import("matplotlib")
 let Pyplot = Python.import("matplotlib.pyplot")
-var NusaPlus = PythonObject(0)
+
+// NusaPlus receives it's value when app finishes launching.
+var NusaPlus = PythonObject(-1)
 
 class AppDelegate: NSObject, UIApplicationDelegate {
 
@@ -22,9 +24,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         print("Here we go...")
 
+        // Ignores PythonKit warnings.
         Warnings.filterwarnings("ignore", #".*"is" with a literal*"#)
 
-        // Import Python Files
+        // Imports Python Files.
         setSysFolder(folderName: "/BridgeBuilder")
         NusaPlus = Python.import("NusaPlus")
 
@@ -34,7 +37,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 .deletingLastPathComponent()
                 .deletingLastPathComponent()
                 .path
-            // Path for NusaPlus.py. "/GeneticBuilder"
+
             let folderPath = projectRoot + folderName
             Sys.path.append(folderPath)
         }
