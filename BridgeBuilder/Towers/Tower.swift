@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 // Experimental.
 class Tower: Gene {

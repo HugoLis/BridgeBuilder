@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Truss model/gene of a structure. A class that allows the creation, mutation and crossover of graphs while
 /// keeping them rigid trusses. Maximum edge length and minimum distances between vertices are also

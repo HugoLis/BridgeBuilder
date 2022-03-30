@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 // MARK: Vectors Arithmetic
 func +(left: CGVector, right: CGVector) -> CGVector {

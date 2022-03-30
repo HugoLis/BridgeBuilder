@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Class that will perform the evolution process with a population of genes. Mutation, crossover and selection
 /// of best performing individuals will be over generations.

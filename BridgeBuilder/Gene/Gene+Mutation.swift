@@ -9,6 +9,7 @@
 // and removing edges and vertices.
 
 import Foundation
+import CoreGraphics
 
 // MARK: Vertices Within Range
 

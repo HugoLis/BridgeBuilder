@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A87575A27F282BB003D608A"
+               BlueprintIdentifier = "9AF072C327F3E46200F1AAF0"
                BuildableName = "BridgeBuilder.app"
                BlueprintName = "BridgeBuilder"
                ReferencedContainer = "container:BridgeBuilder.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A87575A27F282BB003D608A"
+            BlueprintIdentifier = "9AF072C327F3E46200F1AAF0"
             BuildableName = "BridgeBuilder.app"
             BlueprintName = "BridgeBuilder"
             ReferencedContainer = "container:BridgeBuilder.xcodeproj">
@@ -73,7 +73,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A87575A27F282BB003D608A"
+            BlueprintIdentifier = "9AF072C327F3E46200F1AAF0"
             BuildableName = "BridgeBuilder.app"
             BlueprintName = "BridgeBuilder"
             ReferencedContainer = "container:BridgeBuilder.xcodeproj">

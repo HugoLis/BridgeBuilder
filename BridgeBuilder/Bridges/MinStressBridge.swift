@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// A bridge that minimizes truss element stresses for a given load and a maximum
 /// allowed material usage.

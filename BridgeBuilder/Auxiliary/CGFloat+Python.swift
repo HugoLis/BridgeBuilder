@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreGraphics
+
 import PythonKit
 
 // Makes CGFloat convertible to python, by converting it to Double, which

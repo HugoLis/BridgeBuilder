@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Edges of the graph. Represents a truss element, which is a connection between joints (vertices).
 ///

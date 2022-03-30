@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 // Experimental class used for creating towers.
 class MaxHeightTower: Tower, Evolvable {

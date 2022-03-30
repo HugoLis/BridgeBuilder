@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Undirected graph using adjacency list that represents a truss structure.
 class Graph {

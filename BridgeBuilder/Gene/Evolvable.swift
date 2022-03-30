@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Protocol to be adopted by Gene classes so they can their fitness evaluated.
 protocol Evolvable where Self: Gene {

@@ -2,10 +2,10 @@
 //  AppDelegate.swift
 //  BridgeBuilder
 //
-//  Created by Hugo on 28/03/22.
+//  Created by Hugo on 29/03/22.
 //
 
-import UIKit
+import AppKit
 import PythonKit
 
 // Imports Python Packages.
@@ -18,10 +18,8 @@ let Pyplot = Python.import("matplotlib.pyplot")
 // NusaPlus receives it's value when app finishes launching.
 var NusaPlus = PythonObject(-1)
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
         print("Here we go...")
 
         // Ignores PythonKit warnings.
@@ -48,6 +46,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         // This prevents plots from remaining buffered in memory.
         Simulation.useNonInteractiveBackend()
 
+        // Uncomment following block to ignore the user interface.
+         /*
         // Sets global parameters for the genes.
         Gene.setParameters(
             maxEdgeLength: 15,
@@ -118,7 +118,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         // Starts evolution loop.
         evolutionChamber.run()
-
-        return true
+         */
     }
 }
+

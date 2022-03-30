@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Class with sample genes used for testing purposes.
 class TestGene {

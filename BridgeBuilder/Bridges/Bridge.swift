@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Bridge class that contains a crucial random solvable bridge creator. Other types of bridges will inherit
 /// from this class.

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// A bridge that maximizes supported load with a given material usage limit and
 /// a given stress limit.
