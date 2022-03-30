@@ -16,7 +16,7 @@ struct BridgeBuilderApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .frame(minWidth: 600, minHeight: 300)
+                .frame(minWidth: 800, minHeight: 400)
         }
     }
 }
