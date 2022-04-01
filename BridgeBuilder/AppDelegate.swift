@@ -46,7 +46,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // This prevents plots from remaining buffered in memory.
         Simulation.useNonInteractiveBackend()
 
-        // Uncomment following block to ignore the user interface.
+        // Uncomment following block to run an evolution process ignoring the
+        // user interface.
          /*
         // Sets global parameters for the genes.
         Gene.setParameters(
