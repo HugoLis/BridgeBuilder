@@ -1,7 +1,7 @@
 # Documentation
 
 ## Overview
-This project was created as part of my final university thesis project and it 
+This project was created as part of my university thesis project and it 
 is an application for the optimization of **truss bridges** structures using
 evolutionary algorithms.
 
