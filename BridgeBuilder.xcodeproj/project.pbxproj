@@ -33,7 +33,7 @@
 		9AF0733E27F3E68300F1AAF0 /* Gene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0732A27F3E68300F1AAF0 /* Gene.swift */; };
 		9AF0733F27F3E68300F1AAF0 /* Gene+Crossover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0732B27F3E68300F1AAF0 /* Gene+Crossover.swift */; };
 		9AF0734027F3E68300F1AAF0 /* Gene+Mutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0732C27F3E68300F1AAF0 /* Gene+Mutation.swift */; };
-		9AF0734C27F3E79200F1AAF0 /* Documentation.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AF0734B27F3E79200F1AAF0 /* Documentation.md */; };
+		9AF0734C27F3E79200F1AAF0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AF0734B27F3E79200F1AAF0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +71,7 @@
 		9AF0734627F3E69700F1AAF0 /* truss-test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "truss-test.py"; sourceTree = "<group>"; };
 		9AF0734827F3E69700F1AAF0 /* MaxHeightTower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeightTower.swift; sourceTree = "<group>"; };
 		9AF0734927F3E69700F1AAF0 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
-		9AF0734B27F3E79200F1AAF0 /* Documentation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
+		9AF0734B27F3E79200F1AAF0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		9AF072BB27F3E46200F1AAF0 = {
 			isa = PBXGroup;
 			children = (
-				9AF0734B27F3E79200F1AAF0 /* Documentation.md */,
+				9AF0734B27F3E79200F1AAF0 /* README.md */,
 				9AF072C627F3E46200F1AAF0 /* BridgeBuilder */,
 				9AF072C527F3E46200F1AAF0 /* Products */,
 			);
@@ -272,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF072CF27F3E46300F1AAF0 /* Preview Assets.xcassets in Resources */,
-				9AF0734C27F3E79200F1AAF0 /* Documentation.md in Resources */,
+				9AF0734C27F3E79200F1AAF0 /* README.md in Resources */,
 				9AF0732E27F3E68300F1AAF0 /* NusaPlus.py in Resources */,
 				9AF072CC27F3E46300F1AAF0 /* Assets.xcassets in Resources */,
 			);
