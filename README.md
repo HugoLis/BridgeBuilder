@@ -1,11 +1,13 @@
 # Documentation
 
 ## Overview
-This project showcases an application for the optimization of **truss bridges**
-structures with evolutionary algorithms.
+This project was created as part of my final university thesis project and it 
+is an application for the optimization of **truss bridges** structures using
+evolutionary algorithms.
 
 ## Language Approach
-The project uses the Swift programming language with Python libraries through PythonKit package.
+The project uses the Swift programming language with Python libraries through 
+PythonKit package.
 
 PythonKit: allows Python interoperability with Swift.
 (https://github.com/pvieito/PythonKit)
