@@ -39,15 +39,17 @@ Fitness metrics are use of material (weight), elements stresses
 and supported load. It is possible to fix 2 of these metrics while keeping the
 third one variable to reach a best value.
 
-Fitness :
+Maximum load:
 - Goal -> Max load before breakage
 - Fixed max material
 - Fixed max allowed stress
 
+Minimum mass:
 - Fixed load
 - Goal -> Minimum material
 - Fixed max allowed stress
 
+Minimum stress:
 - Fixed load
 - Fixed max material
 - Goal -> Minimum max element stress
